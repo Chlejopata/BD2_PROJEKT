@@ -24,10 +24,5 @@ namespace Terminal
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            test.Content = "Naciśnięto klawisz";
-        }
     }
 }
