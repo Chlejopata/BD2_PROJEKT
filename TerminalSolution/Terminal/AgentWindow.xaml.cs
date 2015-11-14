@@ -18,9 +18,9 @@ namespace Terminal
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AgentWindow : Window
     {
-        public MainWindow()
+        public AgentWindow()
         {
             InitializeComponent();
         }

@@ -26,8 +26,15 @@ namespace Terminal
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            var wyndows = new List<Window>();
+            wyndows.Add(new StaffWindow());
+            wyndows.Add(new AgentWindow());
+            wyndows.Add(new ManagerWindow());
+            
+            foreach(Window win in wyndows)
+            {
+                win.Show();
+            }
             this.Close();
         }
     }
