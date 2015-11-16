@@ -16,7 +16,7 @@
             <Label Content="Przegląd" HorizontalAlignment="Center"/>
             <Button Content="Klienci" Margin="0,0,0,5"/>
             <Button Content="Samoloty" Margin="0,0,0,5"/>
-            <Button Content="Obiekty" Margin="0,0,0,5"/>
+            <Button Content="Infrastruktura" Margin="0,0,0,5"/>
             <Button Content="Wyłączenia" Margin="0,0,0,5"/>
             <Button Content="Rezerwacje" Margin="0,0,0,5"/>
             <Label Content="Inne" HorizontalAlignment="Center"/>

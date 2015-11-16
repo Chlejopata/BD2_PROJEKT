@@ -20,7 +20,7 @@
             <Button Content="Oczekujące" Margin="0,0,0,5"/>
             <Button Content="Przegląd" Margin="0,0,0,5"/>
             <Button Content="Edycja" Margin="0,0,0,5"/>
-            <Label Content="Obiekty" HorizontalAlignment="Center"/>
+            <Label Content="Infrastruktura" HorizontalAlignment="Center"/>
             <Button Content="Przegląd" Margin="0,0,0,5"/>
             <Button Content="Wyłączenia" Margin="0,0,0,5"/>
             <Button Content="Edycja" Margin="0,0,0,5"/>
