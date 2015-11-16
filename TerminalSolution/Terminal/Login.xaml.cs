@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlServerCe;
 
 namespace Terminal
 {
@@ -30,7 +31,13 @@ namespace Terminal
             wyndows.Add(new StaffWindow());
             wyndows.Add(new AgentWindow());
             wyndows.Add(new ManagerWindow());
-            
+
+            String path = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "\\";
+            MessageBox.Show(path);
+            SqlCeConnection conn = DatabaseConnection.InitializeDatabase(path);
+
+            //DatabaseConnection.CreateTable(conn);
+
             foreach(Window win in wyndows)
             {
                 win.Show();
