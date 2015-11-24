@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlServerCe;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Terminal
 {
@@ -20,9 +22,12 @@ namespace Terminal
     /// </summary>
     public partial class Login : Window
     {
+
+        String connectionString;
         public Login()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["Terminal.Properties.Settings.TerminalDBConnectionString"].ConnectionString;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,12 +36,6 @@ namespace Terminal
             wyndows.Add(new StaffWindow());
             wyndows.Add(new AgentWindow());
             wyndows.Add(new ManagerWindow());
-
-            String path = System.IO.Path.GetDirectoryName(System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName) + "\\";
-            MessageBox.Show(path);
-            SqlCeConnection conn = DatabaseConnection.InitializeDatabase(path);
-
-            //DatabaseConnection.CreateTable(conn);
 
             foreach(Window win in wyndows)
             {

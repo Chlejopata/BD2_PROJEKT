@@ -9,6 +9,7 @@ using System.Data;
 
 namespace Terminal
 {
+    // DEPRECATED - NAPISAĆ OD NOWA POD MS SQL SERVER
     class DatabaseConnection
     {
         public static String rootPath;
