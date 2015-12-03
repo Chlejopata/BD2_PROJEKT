@@ -37,6 +37,31 @@ namespace Terminal
             wyndows.Add(new AgentWindow());
             wyndows.Add(new ManagerWindow());
 
+
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                }
+                catch(SqlException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                }
+                
+                string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES";
+                string query2 = "SELECT * FROM dbo.CONTACT_DATA";
+                SqlCommand command = new SqlCommand(query2);
+                command.Connection = conn;
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine("Values:  {0}, {1}, {2}, {3}",
+                        reader[0], reader[1], reader[2], reader[3]);
+                }
+                //MessageBox.Show(result.ToString());
+            }
+
             foreach(Window win in wyndows)
             {
                 win.Show();

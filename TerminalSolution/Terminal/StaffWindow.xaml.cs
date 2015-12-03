@@ -23,5 +23,16 @@ namespace Terminal
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+           /*Terminal.TerminalDBDataSet terminalDBDataSet = ((Terminal.TerminalDBDataSet)(this.FindResource("terminalDBDataSet")));
+            // Load data into the table Table. You can modify this code as needed.
+            Terminal.TerminalDBDataSetTableAdapters.TableTableAdapter terminalDBDataSetTableTableAdapter = new Terminal.TerminalDBDataSetTableAdapters.TableTableAdapter();
+            terminalDBDataSetTableTableAdapter.Fill(terminalDBDataSet.Table);
+            System.Windows.Data.CollectionViewSource tableViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("tableViewSource")));
+            tableViewSource.View.MoveCurrentToFirst();*/
+        }
     }
 }
