@@ -61,11 +61,26 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="CONTACT_DATA.sql" />
+    <Build Include="AGENTS.sql" />
+    <Build Include="MAINTENANCE.sql" />
+    <Build Include="INFRASTRUCTURE.sql" />
+    <Build Include="LOGS.sql" />
+    <Build Include="ACCOUNTS.sql" />
+    <Build Include="CLIENTS.sql" />
+    <Build Include="AIRCRAFTS.sql" />
+    <Build Include="AIRCRAFT_MODELS.sql" />
+    <Build Include="RESERVATIONS.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TerminalMSSQL.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="post_deployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TerminalMSSQL.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="pre_deployment.sql" />
   </ItemGroup>
 </Project>
