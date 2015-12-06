@@ -58,29 +58,34 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Deployment Scripts" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="CONTACT_DATA.sql" />
-    <Build Include="AGENTS.sql" />
-    <Build Include="MAINTENANCE.sql" />
-    <Build Include="INFRASTRUCTURE.sql" />
-    <Build Include="LOGS.sql" />
+    <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
+    <PreDeploy Include="Deployment Scripts\pre_deployment.sql" />
+    <Build Include="Views\RESERVATION_VIEW.sql" />
     <Build Include="ACCOUNTS.sql" />
-    <Build Include="CLIENTS.sql" />
-    <Build Include="AIRCRAFTS.sql" />
-    <Build Include="AIRCRAFT_MODELS.sql" />
-    <Build Include="RESERVATIONS.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TerminalMSSQL.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="post_deployment.sql" />
+    <None Include="TerminalMSSQL_1.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TerminalMSSQL.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <PreDeploy Include="pre_deployment.sql" />
+    <Build Include="AGENTS.sql" />
+    <Build Include="AIRCRAFT_MODELS.sql" />
+    <Build Include="AIRCRAFTS.sql" />
+    <Build Include="CLIENTS.sql" />
+    <Build Include="CONTACT_DATA.sql" />
+    <Build Include="INFRASTRUCTURE.sql" />
+    <Build Include="CONTACT_DATA_SEQUENCE.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="LOGS.sql" />
+    <Build Include="MAINTENANCE.sql" />
+    <Build Include="RESERVATIONS.sql" />
   </ItemGroup>
 </Project>

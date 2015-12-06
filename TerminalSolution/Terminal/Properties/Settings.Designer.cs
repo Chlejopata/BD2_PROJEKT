@@ -26,11 +26,11 @@ namespace Terminal.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\TerminalDB.mdf;Integ" +
-            "rated Security=True")]
-        public string TerminalDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;Initial Catalog=TerminalMSSQL;Integrated Security=Tru" +
+            "e")]
+        public string TerminalMSSQLConnectionString {
             get {
-                return ((string)(this["TerminalDBConnectionString"]));
+                return ((string)(this["TerminalMSSQLConnectionString"]));
             }
         }
     }

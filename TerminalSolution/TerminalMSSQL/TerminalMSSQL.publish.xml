@@ -9,5 +9,6 @@
     <ScriptDatabaseOptions>True</ScriptDatabaseOptions>
     <BlockOnPossibleDataLoss>False</BlockOnPossibleDataLoss>
     <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <CreateNewDatabase>True</CreateNewDatabase>
   </PropertyGroup>
 </Project>

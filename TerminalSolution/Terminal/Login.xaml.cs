@@ -48,8 +48,13 @@ namespace Terminal
                 {
                     MessageBox.Show(exc.Message);
                 }
+
+                //TerminalMSSQLDataSet dataSet = new TerminalMSSQLDataSet();
+                //TerminalMSSQLDataSetTableAdapters.ACCOUNTSTableAdapter accountTableAdapter =
+                //    new TerminalMSSQLDataSetTableAdapters.ACCOUNTSTableAdapter();
+                //accountTableAdapter.Fill(dataSet.ACCOUNTS);
                 
-                string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES";
+                //string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES";
                 string query2 = "SELECT * FROM dbo.CONTACT_DATA";
                 SqlCommand command = new SqlCommand(query2);
                 command.Connection = conn;
