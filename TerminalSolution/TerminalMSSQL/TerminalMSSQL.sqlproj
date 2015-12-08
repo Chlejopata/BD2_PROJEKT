@@ -66,6 +66,7 @@
     <Folder Include="Sequences" />
     <Folder Include="Users" />
     <Folder Include="Logins" />
+    <Folder Include="Functions" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
@@ -75,8 +76,6 @@
   <ItemGroup>
     <None Include="TerminalMSSQL.publish.xml" />
     <None Include="TerminalMSSQL_1.publish.xml" />
-    <None Include="CONTAINED_DATABASE.sql" />
-    <None Include="Script1.sql" />
     <None Include="Script2.sql" />
     <None Include="LoginWithSA.publish.xml" />
   </ItemGroup>
@@ -88,10 +87,8 @@
     <Build Include="Tables\AGENTS.sql" />
     <Build Include="Sequences\CONTACT_DATA_SEQUENCE.sql" />
     <Build Include="Users\AGENT_DBUSER.sql" />
-    <Build Include="Users\ADMIN_DBUSER.sql" />
     <Build Include="Users\EMPLOYEE_DBUSER.sql" />
     <Build Include="Users\MANAGER_DBUSER.sql" />
-    <Build Include="Users\GUEST_DBUSER.sql" />
     <Build Include="Sequences\ACCOUNTS_SEQUENCE.sql" />
     <Build Include="Sequences\CLIENTS_SEQUENCE.sql" />
     <Build Include="Sequences\AGENTS_SEQUENCE.sql" />
@@ -102,9 +99,12 @@
     <Build Include="Sequences\RESERVATIONS_SEQUENCE.sql" />
     <Build Include="Sequences\INFRASTRUCTURE_SEQUENCE.sql" />
     <Build Include="Sequences\RESERVATION_CYCLE_SEQUENCE.sql" />
-    <Build Include="Login1.sql" />
     <Build Include="Logins\AGENT_LOGIN.sql" />
-    <Build Include="SELECTS.sql" />
+    <Build Include="Functions\VALIDATE_CREDENTIALS_FUNCTION.sql" />
+    <Build Include="Logins\EMPLOYEE_LOGIN.sql" />
+    <Build Include="Logins\MANAGER_LOGIN.sql" />
+    <Build Include="Logins\VALIDATE_CREDENTIALS_LOGIN.sql" />
+    <Build Include="Users\VALIDATE_CREDENTIALS_DBUSER.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
