@@ -65,6 +65,7 @@
     <Folder Include="Tables" />
     <Folder Include="Sequences" />
     <Folder Include="Users" />
+    <Folder Include="Logins" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
@@ -76,6 +77,8 @@
     <None Include="TerminalMSSQL_1.publish.xml" />
     <None Include="CONTAINED_DATABASE.sql" />
     <None Include="Script1.sql" />
+    <None Include="Script2.sql" />
+    <None Include="LoginWithSA.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TerminalMSSQL.refactorlog" />
@@ -99,6 +102,8 @@
     <Build Include="Sequences\RESERVATIONS_SEQUENCE.sql" />
     <Build Include="Sequences\INFRASTRUCTURE_SEQUENCE.sql" />
     <Build Include="Sequences\RESERVATION_CYCLE_SEQUENCE.sql" />
+    <Build Include="Login1.sql" />
+    <Build Include="Logins\AGENT_LOGIN.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
