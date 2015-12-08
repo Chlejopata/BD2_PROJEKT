@@ -88,6 +88,7 @@
     <Build Include="Users\EMPLOYEE_DBUSER.sql" />
     <Build Include="Users\MANAGER_DBUSER.sql" />
     <Build Include="Users\GUEST_DBUSER.sql" />
+    <Build Include="Sequences\ACCOUNTS_SEQUENCE.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
