@@ -24,6 +24,8 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <GenerateCreateScript>True</GenerateCreateScript>
+    <Containment>None</Containment>
+    <IsEncryptionOn>True</IsEncryptionOn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -60,32 +62,43 @@
     <Folder Include="Properties" />
     <Folder Include="Deployment Scripts" />
     <Folder Include="Views" />
+    <Folder Include="Tables" />
+    <Folder Include="Sequences" />
+    <Folder Include="Users" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
     <PreDeploy Include="Deployment Scripts\pre_deployment.sql" />
     <Build Include="Views\RESERVATION_VIEW.sql" />
-    <Build Include="ACCOUNTS.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TerminalMSSQL.publish.xml" />
     <None Include="TerminalMSSQL_1.publish.xml" />
+    <None Include="CONTAINED_DATABASE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TerminalMSSQL.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="AGENTS.sql" />
-    <Build Include="AIRCRAFT_MODELS.sql" />
-    <Build Include="AIRCRAFTS.sql" />
-    <Build Include="CLIENTS.sql" />
-    <Build Include="CONTACT_DATA.sql" />
-    <Build Include="INFRASTRUCTURE.sql" />
-    <Build Include="CONTACT_DATA_SEQUENCE.sql" />
+    <Build Include="Tables\ACCOUNTS.sql" />
+    <Build Include="Tables\AGENTS.sql" />
+    <Build Include="Sequences\CONTACT_DATA_SEQUENCE.sql" />
+    <Build Include="Users\AGENT_DBUSER.sql" />
+    <Build Include="Users\ADMIN_DBUSER.sql" />
+    <Build Include="Users\EMPLOYEE_DBUSER.sql" />
+    <Build Include="Users\MANAGER_DBUSER.sql" />
+    <Build Include="Users\GUEST_DBUSER.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="LOGS.sql" />
-    <Build Include="MAINTENANCE.sql" />
-    <Build Include="RESERVATIONS.sql" />
+    <Build Include="Tables\AIRCRAFT_MODELS.sql" />
+    <Build Include="Tables\AIRCRAFTS.sql" />
+    <Build Include="Tables\CLIENTS.sql" />
+    <Build Include="Tables\CONTACT_DATA.sql" />
+    <Build Include="Tables\INFRASTRUCTURE.sql" />
+    <Build Include="Tables\LOGS.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\MAINTENANCE.sql" />
+    <Build Include="Tables\RESERVATIONS.sql" />
   </ItemGroup>
 </Project>

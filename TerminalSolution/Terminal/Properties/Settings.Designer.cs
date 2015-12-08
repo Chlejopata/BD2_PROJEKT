@@ -26,11 +26,12 @@ namespace Terminal.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;Initial Catalog=TerminalMSSQL;Integrated Security=Tru" +
-            "e")]
-        public string TerminalMSSQLConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;Initial Catalog=TerminalMSSQL;User Id=GUEST_DBUSER;Pa" +
+            "ssword=eD$nWvgBWeqt|phpa`?xsc6nmsFT7_&#$!~<pyxdhs9LhAlm;Integrated Security=True" +
+            "")]
+        public string guestConnectionString {
             get {
-                return ((string)(this["TerminalMSSQLConnectionString"]));
+                return ((string)(this["guestConnectionString"]));
             }
         }
     }

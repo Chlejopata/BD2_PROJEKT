@@ -27,7 +27,7 @@ namespace Terminal
         public Login()
         {
             InitializeComponent();
-            connectionString = ConfigurationManager.ConnectionStrings["Terminal.Properties.Settings.TerminalMSSQLConnectionString"].ConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["Terminal.Properties.Settings.guestConnectionString"].ConnectionString;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
