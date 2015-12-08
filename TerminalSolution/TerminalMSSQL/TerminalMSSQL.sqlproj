@@ -104,6 +104,7 @@
     <Build Include="Sequences\RESERVATION_CYCLE_SEQUENCE.sql" />
     <Build Include="Login1.sql" />
     <Build Include="Logins\AGENT_LOGIN.sql" />
+    <Build Include="SELECTS.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
