@@ -93,3 +93,4 @@ VALUES
 
 (NEXT VALUE FOR [CONTACT_DATA_SEQUENCE], 'Emirates','Lumen, VI piętro', 'Ul. Złota 59', 'Warszawa', '00120', 'contact@emirates.com', '223060808' ), 
 (NEXT VALUE FOR [CONTACT_DATA_SEQUENCE], 'Andrzej Samotny','Lumen, VI piętro', 'Ul. Złota 59', 'Warszawa', '00120', 'andrzej.samotny@emirates.com', '554125896' )
+
