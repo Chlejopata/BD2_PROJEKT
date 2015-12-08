@@ -67,6 +67,8 @@
     <Folder Include="Users" />
     <Folder Include="Logins" />
     <Folder Include="Functions" />
+    <Folder Include="Example Scripts" />
+    <Folder Include="Data Scripts" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
@@ -76,7 +78,6 @@
   <ItemGroup>
     <None Include="TerminalMSSQL.publish.xml" />
     <None Include="TerminalMSSQL_1.publish.xml" />
-    <None Include="Script2.sql" />
     <None Include="LoginWithSA.publish.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +106,15 @@
     <Build Include="Logins\MANAGER_LOGIN.sql" />
     <Build Include="Logins\VALIDATE_CREDENTIALS_LOGIN.sql" />
     <Build Include="Users\VALIDATE_CREDENTIALS_DBUSER.sql" />
+    <Build Include="AGENTS_DATA_INSERT.sql" />
+    <Build Include="CLIENTS_DATA_INSERT.sql" />
+    <Build Include="CONTACT_DATA_INSERT.sql" />
+    <Build Include="ACCOUNTS_INSERT.sql" />
+    <Build Include="Example Scripts\SELECTS.sql" />
+    <Build Include="Data Scripts\ACCOUNTS_INSERT.sql" />
+    <Build Include="Data Scripts\AGENTS_DATA_INSERT.sql" />
+    <Build Include="Data Scripts\CLIENTS_DATA_INSERT.sql" />
+    <Build Include="Data Scripts\CONTACT_DATA_INSERT.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
