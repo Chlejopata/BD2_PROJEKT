@@ -69,6 +69,7 @@
     <Folder Include="Functions" />
     <Folder Include="Example Scripts" />
     <Folder Include="Data Scripts" />
+    <Folder Include="Others Xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Deployment Scripts\post_deployment.sql" />
@@ -76,12 +77,14 @@
     <Build Include="Views\RESERVATION_VIEW.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TerminalMSSQL.publish.xml" />
-    <None Include="TerminalMSSQL_1.publish.xml" />
-    <None Include="LoginWithSA.publish.xml" />
+    <None Include="Data Scripts\AIRCRAFT_MODELS_INSERT.sql" />
+    <None Include="Data Scripts\AIRCRAFTS_INSERT.sql" />
+    <None Include="Others Xml\TerminalMSSQL_1.publish.xml" />
+    <None Include="Others Xml\TerminalMSSQL.publish.xml" />
+    <None Include="Others Xml\LoginWithSA.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="TerminalMSSQL.refactorlog" />
+    <RefactorLog Include="Others Xml\TerminalMSSQL.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\ACCOUNTS.sql" />
@@ -106,10 +109,6 @@
     <Build Include="Logins\MANAGER_LOGIN.sql" />
     <Build Include="Logins\VALIDATE_CREDENTIALS_LOGIN.sql" />
     <Build Include="Users\VALIDATE_CREDENTIALS_DBUSER.sql" />
-    <Build Include="AGENTS_DATA_INSERT.sql" />
-    <Build Include="CLIENTS_DATA_INSERT.sql" />
-    <Build Include="CONTACT_DATA_INSERT.sql" />
-    <Build Include="ACCOUNTS_INSERT.sql" />
     <Build Include="Example Scripts\SELECTS.sql" />
     <Build Include="Data Scripts\ACCOUNTS_INSERT.sql" />
     <Build Include="Data Scripts\AGENTS_DATA_INSERT.sql" />
