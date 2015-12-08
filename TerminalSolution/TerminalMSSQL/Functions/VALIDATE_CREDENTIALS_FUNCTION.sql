@@ -1,10 +1,18 @@
 ﻿CREATE FUNCTION [dbo].[VALIDATE_CREDENTIALS_FUNCTION]
 (
-	@param1 int,
-	@param2 int
+	@login varchar(16),
+	@hash varchar(16)
 )
 RETURNS INT
 AS
 BEGIN
-	RETURN @param1 + @param2
+	DECLARE @exist int;
+	DECLARE @permission int;
+	SELECT @exist = COUNT([ACCOUNT_ID]) FROM [dbo].[ACCOUNTS] WHERE [LOGIN] = @login AND [PASSWORD] = @hash;
+	IF @exist = 1 
+		BEGIN
+			SELECT @permission = [PERMISSIONS] FROM [dbo].[ACCOUNTS] WHERE [LOGIN] = @login AND [PASSWORD] = @hash;
+			RETURN @permission;
+		END
+	RETURN NULL;
 END
