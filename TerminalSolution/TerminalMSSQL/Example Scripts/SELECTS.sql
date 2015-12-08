@@ -2,3 +2,6 @@
 SELECT * FROM [TerminalMSSQL].[dbo].[AGENTS];
 SELECT * FROM [TerminalMSSQL].[dbo].[CLIENTS];
 SELECT * FROM [TerminalMSSQL].[dbo].[ACCOUNTS];
+SELECT * FROM [TerminalMSSQL].[dbo].[AIRCRAFT_MODELS];
+SELECT * FROM [TerminalMSSQL].[dbo].[AIRCRAFTS];
+SELECT * FROM [TerminalMSSQL].[dbo].[MAINTENANCE];

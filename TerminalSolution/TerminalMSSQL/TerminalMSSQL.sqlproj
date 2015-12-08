@@ -82,6 +82,8 @@
     <None Include="Others Xml\TerminalMSSQL_1.publish.xml" />
     <None Include="Others Xml\TerminalMSSQL.publish.xml" />
     <None Include="Others Xml\LoginWithSA.publish.xml" />
+    <None Include="Data Scripts\INFRASTRUCTURE_INSERT.sql" />
+    <None Include="Data Scripts\MAINTENANCE_INSERT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Others Xml\TerminalMSSQL.refactorlog" />
@@ -97,7 +99,6 @@
     <Build Include="Sequences\CLIENTS_SEQUENCE.sql" />
     <Build Include="Sequences\AGENTS_SEQUENCE.sql" />
     <Build Include="Sequences\AIRCRAFT_MODELS_SEQUENCE.sql" />
-    <Build Include="Sequences\AIRCRAFTS_SEQUENCE.sql" />
     <Build Include="Sequences\MAINTENANCE_SEQUENCE.sql" />
     <Build Include="Sequences\LOGS_SEQUENCE.sql" />
     <Build Include="Sequences\RESERVATIONS_SEQUENCE.sql" />
@@ -109,11 +110,11 @@
     <Build Include="Logins\MANAGER_LOGIN.sql" />
     <Build Include="Logins\VALIDATE_CREDENTIALS_LOGIN.sql" />
     <Build Include="Users\VALIDATE_CREDENTIALS_DBUSER.sql" />
-    <Build Include="Example Scripts\SELECTS.sql" />
-    <Build Include="Data Scripts\ACCOUNTS_INSERT.sql" />
-    <Build Include="Data Scripts\AGENTS_DATA_INSERT.sql" />
-    <Build Include="Data Scripts\CLIENTS_DATA_INSERT.sql" />
-    <Build Include="Data Scripts\CONTACT_DATA_INSERT.sql" />
+    <None Include="Example Scripts\SELECTS.sql" />
+    <None Include="Data Scripts\ACCOUNTS_INSERT.sql" />
+    <None Include="Data Scripts\AGENTS_DATA_INSERT.sql" />
+    <None Include="Data Scripts\CLIENTS_DATA_INSERT.sql" />
+    <None Include="Data Scripts\CONTACT_DATA_INSERT.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
