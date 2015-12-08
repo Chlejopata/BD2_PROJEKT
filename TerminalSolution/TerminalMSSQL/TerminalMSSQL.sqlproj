@@ -75,6 +75,7 @@
     <None Include="TerminalMSSQL.publish.xml" />
     <None Include="TerminalMSSQL_1.publish.xml" />
     <None Include="CONTAINED_DATABASE.sql" />
+    <None Include="Script1.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="TerminalMSSQL.refactorlog" />
@@ -89,6 +90,15 @@
     <Build Include="Users\MANAGER_DBUSER.sql" />
     <Build Include="Users\GUEST_DBUSER.sql" />
     <Build Include="Sequences\ACCOUNTS_SEQUENCE.sql" />
+    <Build Include="Sequences\CLIENTS_SEQUENCE.sql" />
+    <Build Include="Sequences\AGENTS_SEQUENCE.sql" />
+    <Build Include="Sequences\AIRCRAFT_MODELS_SEQUENCE.sql" />
+    <Build Include="Sequences\AIRCRAFTS_SEQUENCE.sql" />
+    <Build Include="Sequences\MAINTENANCE_SEQUENCE.sql" />
+    <Build Include="Sequences\LOGS_SEQUENCE.sql" />
+    <Build Include="Sequences\RESERVATIONS_SEQUENCE.sql" />
+    <Build Include="Sequences\INFRASTRUCTURE_SEQUENCE.sql" />
+    <Build Include="Sequences\RESERVATION_CYCLE_SEQUENCE.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />
