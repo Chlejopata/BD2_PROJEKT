@@ -1,12 +1,12 @@
 ﻿PRINT N'Inserting values into [dbo].[ACCOUNTS]...';
 INSERT INTO [TerminalMSSQL].[dbo].[ACCOUNTS]
 VALUES 
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'm.nowak','hash01', 3, 0, 1),
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'b.lecina','hash02', 3, 0, 2),
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  's.kasztan','hash03', 3, 0, 3),
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'p.ulan','hash04', 3, 0, 4),
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'l.hajdu','hash05', 3, 0, 5),
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'a.samotny','hash06', 3, 0, 6),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'm.nowak','hash01', 3, 0, 2),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'b.lecina','hash02', 3, 0, 4),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  's.kasztan','hash03', 3, 0, 6),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'p.ulan','hash04', 3, 0, 8),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'l.hajdu','hash05', 3, 0, 10),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'a.samotny','hash06', 3, 0, 12),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'emp.konieczna','hash07', 2, 0, null),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'emp.czarnecki','hash08', 2, 0, null),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'emp.wieczorek','hash09', 2, 0, null),

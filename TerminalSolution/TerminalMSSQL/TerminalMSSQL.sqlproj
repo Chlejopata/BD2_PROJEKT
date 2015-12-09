@@ -84,6 +84,7 @@
     <None Include="Others Xml\LoginWithSA.publish.xml" />
     <None Include="Data Scripts\INFRASTRUCTURE_INSERT.sql" />
     <None Include="Data Scripts\MAINTENANCE_INSERT.sql" />
+    <None Include="Data Scripts\ALTER_GRANT_SCRIPT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Others Xml\TerminalMSSQL.refactorlog" />
