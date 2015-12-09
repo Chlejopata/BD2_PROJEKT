@@ -85,6 +85,7 @@
     <None Include="Data Scripts\INFRASTRUCTURE_INSERT.sql" />
     <None Include="Data Scripts\MAINTENANCE_INSERT.sql" />
     <None Include="Data Scripts\ALTER_GRANT_SCRIPT.sql" />
+    <None Include="Data Scripts\RESERVATIONS_INSERT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Others Xml\TerminalMSSQL.refactorlog" />
@@ -116,6 +117,7 @@
     <None Include="Data Scripts\AGENTS_DATA_INSERT.sql" />
     <None Include="Data Scripts\CLIENTS_DATA_INSERT.sql" />
     <None Include="Data Scripts\CONTACT_DATA_INSERT.sql" />
+    <Build Include="CONTACT_DATA_INDEX.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\AIRCRAFT_MODELS.sql" />

@@ -18,6 +18,7 @@
 
 --SELECT * FROM ACCOUNTS;
 
---DECLARE @ret int;
---EXEC @ret = [dbo].VALIDATE_CREDENTIALS_FUNCTION @login = 'man.wisniewski', @hash = 'hash10';
---PRINT @ret;
+DECLARE @ret int;
+EXEC @ret = [dbo].VALIDATE_CREDENTIALS_FUNCTION @login = 'm.nowak', @hash = 'hash01';
+PRINT 'Value:';
+PRINT @ret;

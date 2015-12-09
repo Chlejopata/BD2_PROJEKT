@@ -18,6 +18,7 @@ Post-Deployment Script Template
 :r "../Data Scripts/CONTACT_DATA_INSERT.sql"
 :r "../Data Scripts/INFRASTRUCTURE_INSERT.sql"
 :r "../Data Scripts/MAINTENANCE_INSERT.sql"
+:r "../Data Scripts/RESERVATIONS_INSERT.sql"
 
 :r "../Data Scripts/ALTER_GRANT_SCRIPT.sql"
 GO
