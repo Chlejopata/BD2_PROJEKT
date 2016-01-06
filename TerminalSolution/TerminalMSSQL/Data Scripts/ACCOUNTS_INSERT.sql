@@ -1,7 +1,7 @@
 ﻿PRINT N'Inserting values into [dbo].[ACCOUNTS]...';
 INSERT INTO [TerminalMSSQL].[dbo].[ACCOUNTS]
 VALUES 
-(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'm.nowak','hash01', 3, 0, 1),
+(NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'm.nowak','5ee23b07c4275dad8e102b05c9636fd4', 3, 0, 1),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'b.lecina','hash02', 3, 0, 2),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  's.kasztan','hash03', 3, 0, 3),
 (NEXT VALUE FOR [ACCOUNTS_SEQUENCE],  'p.ulan','hash04', 3, 0, 4),
