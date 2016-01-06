@@ -33,8 +33,8 @@ namespace Terminal
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var wyndows = new List<Window>();
-            wyndows.Add(new StaffWindow());
-            wyndows.Add(new AgentWindow());
+            //wyndows.Add(new StaffWindow());
+            //wyndows.Add(new AgentWindow());
             wyndows.Add(new ManagerWindow());
 
 
@@ -53,7 +53,7 @@ namespace Terminal
                 //TerminalMSSQLDataSetTableAdapters.ACCOUNTSTableAdapter accountTableAdapter =
                 //    new TerminalMSSQLDataSetTableAdapters.ACCOUNTSTableAdapter();
                 //accountTableAdapter.Fill(dataSet.ACCOUNTS);
-                
+
                 //string query = "SELECT * FROM INFORMATION_SCHEMA.TABLES";
                 string query2 = "SELECT * FROM dbo.CONTACT_DATA";
                 SqlCommand command = new SqlCommand(query2);

@@ -26,7 +26,10 @@
         <Image Source="Graphics/airport-logo.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Grid.RowSpan="2"/>
         <TabControl Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" Margin="0,0,10,10">
             <TabItem Header="Dane klientów" Height="22" VerticalAlignment="Top">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="507" Height="324"/>
+
+                </Grid>
             </TabItem>
             <TabItem Header="Statystyki">
                 <Grid Background="#FFE5E5E5"/>
