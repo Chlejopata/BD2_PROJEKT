@@ -1,7 +1,7 @@
 ﻿CREATE FUNCTION [dbo].[VALIDATE_CREDENTIALS_FUNCTION]
 (
 	@login varchar(16),
-	@hash varchar(16)
+	@hash varchar(32)
 )
 RETURNS INT
 AS
